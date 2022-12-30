@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pazzle game</title>
+</head>
+<body>
+    <body>
+
+ <!-- timer -->
+
+        <div id="centered_div">
+            <div id="counter">
+                <div id="counter_item1" class="counter_item">
+                    <div class="front"></div>
+                    <div class="digit digit0"></div>
+                </div>
+                <div id="counter_item2" class="counter_item">
+                    <div class="front"></div>
+                    <div class="digit digit0"></div>
+                </div>
+                <div id="counter_item3" class="counter_item">
+                    <div class="front"></div>
+                    <div class="digit digit_colon"></div>
+                </div>
+                <div id="counter_item4" class="counter_item">
+                    <div class="front"></div>
+                    <div class="digit digit0"></div>
+                </div>
+                <div id="counter_item5" class="counter_item">
+                    <div class="front"></div>
+                    <div class="digit digit0"></div>
+                </div>
+            </div>
+            <input id="begin" type="button" value="Start game" onclick="CounterInit(60); return false; ">
+            <input type="button" value="Check result" id="check" >
+            <input id="reset" type="button" value="New game" onclick="window.location.reload()">
+        </div>
+
+
+<!-- pazzle -->
+
+    <div id="big_box">
+        <div class="pieces box" id="start">
+          
+        </div>
+        <div class="board box" id="finish">
+            
+        </div>
+    </div>
+
+<!-- modals -->
+    
+<div class="modal-container lose">
+    <div class="modal loser">
+        <div class="modal-text">
+            <h1>It's a pity, but you lost</h1>
+        </div>
+        <input type="button" class="close reload" value="Close">
+        
+    </div>
+</div>
+
+<div class="modal-container win">
+    <div class="modal winner">
+        <div class="modal-text">
+            <h1>Woohoo, well done, you did it!</h1>
+        </div>
+        <input type="button" class="close win-close reload" value="Close">
+    </div>
+</div>
+
+<div class="modal-container question">
+    <div class="modal ask">
+            <div class="modal-text">
+                <h1>You still have time, you sure?</h1>
+            </div>
+            <div class="buttons">
+                <input type="button" class="contin" value="Check">
+                <input type="button" class="close check-close" value="Close">
+            </div>
+    </div>
+</div>
+
+
+    <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="jquery.countdown.js"></script> -->
+    <script src="game.js"></script>
+</body>
+</html>

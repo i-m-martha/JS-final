@@ -1,0 +1,216 @@
+
+#centered_div {
+	position:absolute;	
+    top: 30%;	
+    left: 50%;	
+    width:30em;	
+    /* height:18em;	 */
+    margin-top: -9em; 
+    margin-left: -15em; 	
+    text-align: center;
+}
+
+#counter{    
+    margin-top: 20px;    
+    margin-left: 135px;    
+    background-color: #222;    
+    width: 154px;    
+    height: 59px;    
+    border-radius: 3px;
+    box-shadow: -5px 6px 11px 0 #606060ab;
+
+}
+#counter_item1{    
+    margin-left: 2px;
+}
+.counter_item{    
+    width: 30px;    
+    height: 55px;    
+    overflow: hidden;    
+    float: left;    
+    margin-top: 2px;
+}
+.counter_item .digit, .counter_item .front{    
+    width: 30px;    
+    height: 55px;    
+    overflow: hidden;
+}
+.counter_item .front{    
+    background: transparent url(images/counter_front.png) no-repeat;    
+    position: fixed;    
+}
+.counter_item .digit_colon{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 0px;            
+}
+.counter_item .digit0{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -55px;        
+}
+.counter_item .digit1{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -110px;        
+}
+.counter_item .digit2{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -165px;        
+}
+.counter_item .digit3{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -220px;        
+}
+.counter_item .digit4{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -275px;        
+}
+.counter_item .digit5{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -330px;        
+}
+.counter_item .digit6{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -385px;        
+}
+.counter_item .digit7{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -440px;        
+}
+.counter_item .digit8{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -495px;        
+}
+.counter_item .digit9{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -550px;        
+}
+.counter_item .digit_cherry{    
+    background: transparent url(images/counter_digits.png) no-repeat 0 -605px;        
+}
+body{    
+    background: #606060 url(images/counter_bg.jpg);
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 1.7em;
+    text-shadow: 0 1px 1px #DDD;
+}
+
+input{
+    margin: 40px 10px;
+    background-color: #1c1c1c;
+    box-shadow: -5px 6px 11px 0 #606060ab;
+    border: 0;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    color: rgb(231, 230, 228);
+}
+.modal-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(56, 56, 56, 0.562);
+    /* display: none; */
+}
+.lose{
+    display: none;
+}
+.win{
+    display: none;
+}
+.question{
+    display: none;
+}
+.modal, .ask{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(191, 172, 132);
+    margin: 100px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1c1c1c;
+    border: 10px solid #1c1c1c;
+    border-radius: 20px;
+}
+
+.loser{
+    background-color: rgb(182, 129, 119);
+    border: 10px solid #5d2121;
+}
+.winner{
+    background-color: rgb(155, 183, 144);
+    border: 10px solid #253e25;
+}
+.modal-text{
+    width: 100%;
+    text-align: center;
+    border-top: 3px dotted #222;
+    border-bottom: 3px dotted #222;
+}
+.close{
+    margin: 30px 10px 0;
+    background-color: #782525;
+    box-shadow: -5px 6px 11px 0 #6a3131ab;
+}
+.win-close{
+    margin: 30px 10px 0;
+    background-color: #25783f;
+    box-shadow: -5px 6px 11px 0 #3b6a31ab;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contin{
+    margin: 30px 10px 0;
+    background-color: #25783f;
+    box-shadow: -5px 6px 11px 0 #3b6a31ab;
+}
+
+
+
+/* Game boxes */
+
+
+#big_box{
+    width: 80%;
+    height: 250px;
+    margin: 260px auto 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+
+}
+.box{
+    width: 448px;
+    height: 200px;
+    border: 10px solid #1c1c1c;
+    background-color: rgba(212, 209, 204, 0.521);
+    box-shadow: -5px 6px 11px 0 #606060ab;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+
+
+
+
+
+
+div.img{
+    background-image: url(pazzle/the-great-waves-off-kanagawa.jpg);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 107px;
+    border: 0.2px dotted rgb(209, 209, 202);
+    float: left;
+    box-sizing: border-box;
+}
+
+
+
+.disabled{
+    background-color: grey;
+}
+
+
+
+
+
+
